@@ -16,6 +16,7 @@ tags : [vpn, tutorial, client]
 - [iPhone](#ios)
 - [iPad](#ipad)
 - [Android](#andriod)
+- [智能加速](#chnroutes)
 
 ---
 
@@ -528,3 +529,32 @@ VPN 列表中会看到刚设置的 "云梯 VPN (PPTP)"，点击登录
 连接成功后，VPN 列表中会显示“已连接”
 
 ![image](/assets/img/vpn_client/step6-android.jpg)
+
+## chnroutes
+
+[chnroutes](https://github.com/jimmyxu/chnroutes)
+
+利用来自APNIC的数据生成路由命令脚本，让VPN客户端在连接时自动执行。通过这些路由脚本，可以让用户在使用VPN作为默认网关时，不使用VPN访问中国国内IP，从而减轻VPN负担，并提高访问国内网站的速度。
+
+### Mac OS X
+
+在终端中执行python chnroutes.py -p mac，这将生成ip-up和ip-down两个文件；
+
+将这两个文件移入/etc/ppp/；
+
+重新连接VPN，观察测试。
+
+### Linux
+
+执行python chnroutes.py -p linux，这将生成ip-pre-up和ip-down两个文件；
+
+将ip-pre-up移入/etc/ppp/，ip-down移入/etc/ppp/ip-down.d/；
+
+重新连接VPN，观察测试。
+
+### Windows
+
+在命令提示符中执行python chnroutes.py -p win，这将生成vpnup.bat和vpndown.bat两个文件；
+
+在拨号前手动执行vpnup.bat文件设置路由表；在断开VPN后，可运行vpndown.bat清理路由表。
+
