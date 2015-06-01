@@ -1,10 +1,12 @@
 ---
 layout: post
+title: "VPN 客户端配置全解"
 categories: Tutorial
 tags : [vpn, tutorial, client]
+summary: VPN是上网必须呀，这里介绍了不同平台下VPN客户端的配置方法包括linux,mac, windows, android, ios。
 ---
-{% include JB/setup %}
 
+VPN是上网必须呀，这里介绍了不同平台下VPN客户端的配置方法包括linux,mac, windows, android, ios。
 
 转自：[云梯](https://www.yunti.me/guides/)
 

@@ -3,13 +3,10 @@ layout: post
 categories: Tutorial
 title: "绘图工具graphviz学习使用"
 tags : [graphviz, tutorial, graph, python]
+summary: graphviz 是一个运用广泛的命令行绘图软体，不过说是绘图软体，它能绘的图并不是一般人想像中的漫画或logo，而是数学意义上的graph，比较通俗的说法就是「关系图」。
 ---
-{% include JB/setup %}
-
-# 绘图工具graphviz学习使用
 
 ## 起因
-
 最近完成了研究生毕业设计，在写毕业论文时，老师曾经推荐使用代码来画相关的图，当时时间有些紧，所以没有这样做。最近在看[rapidjson](https://github.com/miloyip/rapidjson)的文档，看到[miloyip](https://github.com/miloyip/) 文档中的图都是用`dot`文件的源代码编译出来的，一查，原来是[graphviz](http://www.graphviz.org)的源代码。遂用了半天简单学习了下`graphviz`的语法和使用，感觉很不错，以后画图有了一个不错的工具。
 
 `graphviz` 是一个运用广泛的命令行绘图软体，不过说是绘图软体，它能绘的图并不是一般人想像中的漫画或logo，而是数学意义上的`graph`，比较通俗的说法就是「关系图」。

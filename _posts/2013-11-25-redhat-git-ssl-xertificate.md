@@ -3,6 +3,7 @@ layout: post
 categories: problems 
 title: "redhat 下处理git ssl certificate 问题"
 tags : [git, ssl, ca]
+summary:  error SSL certificate problem, verify that the CA cert is OK. Details
 ---
 
 问题：

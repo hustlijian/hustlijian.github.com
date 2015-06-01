@@ -2,7 +2,10 @@
 layout: post
 title: "搭建Git服务器仓库"
 categories: git
+summary: 使用git可以简单的搭建Git服务器仓库，原理是使用ssh登录，这个方法的优点就是简单。
 ---
+
+使用git可以简单的搭建Git服务器仓库，原理是使用ssh登录，这个方法的优点就是简单。
 
 参考：[Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000) 中git服务器搭建
 
